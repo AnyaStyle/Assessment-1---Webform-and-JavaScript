@@ -8,6 +8,7 @@
     <title>Whisky World</title>
     <link rel="stylesheet" href="/stylesheet/style.css">
     <link rel="js" href="/test.js">
+  
 </head>
 
 <body style="background-color: #8D8686">
@@ -23,7 +24,7 @@
         <p>To use this site, you must be of legal age to buy and consume alcohol in your country of residence. If there is no legislation in this regard in your country, you must be at least 18 years old</p>
         <fieldset>
             <legend>Please select your country</legend>
-            <select name=A id=select autocomplete=off required>
+            <select name="origin" id="origin" autocomplete=off required>
                 <option>New Zealand</option>
                 <option>Australia</option>
                 <option>China</option>
@@ -32,11 +33,10 @@
 
         <fieldset id=custom>
             <legend>Age</legend>
-            <input type="text" id="lname" name="lname"><br><br>
+            <input type="text" id="age" name="age"><br><br>
         </fieldset>
-        <input type="submit" onclick="alert('Thank you, you may continue shopping')" value="Submit"><br><br>
+        <input type="submit" onclick="validateUser" value="Submit"><br><br>
 
-       
 
 </body>
 
